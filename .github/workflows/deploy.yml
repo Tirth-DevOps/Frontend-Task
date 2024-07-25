@@ -1,4 +1,4 @@
-name: frontend-task
+name: task-4
 on:
   push:
     branches:
@@ -22,8 +22,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: frontend-task
-          environment_name: Frontend-task-env
+          application_name: task-4
+          environment_name: Task-4-env 
           existing_bucket_name: elasticbeanstalk-ap-south-1-637423386639
           version_label: ${{ github.sha }}
           region: ap-south-1
